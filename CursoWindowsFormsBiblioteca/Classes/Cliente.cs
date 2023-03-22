@@ -12,6 +12,7 @@ namespace CursoWindowsFormsBiblioteca.Classes
         { 
             [Required(ErrorMessage = "Código do cliente é obrigatório")]
             [RegularExpression("([0-9]+)",ErrorMessage = "Código do Cliente é somente valores númericos")]
+            [StringLength(6,MinimumLength = 6,ErrorMessage = "O Código do cliente deve ter 6 dígitos")]
             public string Id
             {
                 get;
