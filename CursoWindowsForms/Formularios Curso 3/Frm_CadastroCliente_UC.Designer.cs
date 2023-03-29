@@ -46,7 +46,6 @@ namespace CursoWindowsForms
             this.Lbl_Complemento = new System.Windows.Forms.Label();
             this.Txt_Bairro = new System.Windows.Forms.TextBox();
             this.Lbl_Bairro = new System.Windows.Forms.Label();
-            this.Txt_Estado = new System.Windows.Forms.TextBox();
             this.Lbl_Estado = new System.Windows.Forms.Label();
             this.Txt_Telefone = new System.Windows.Forms.TextBox();
             this.Lbl_Telefone = new System.Windows.Forms.Label();
@@ -73,6 +72,7 @@ namespace CursoWindowsForms
             this.salvarToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.apagaToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.limparToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.Cmb_Estado = new System.Windows.Forms.ComboBox();
             this.Grp_Codigo.SuspendLayout();
             this.Grp_DadosPessoais.SuspendLayout();
             this.Grp_Genero.SuspendLayout();
@@ -219,15 +219,6 @@ namespace CursoWindowsForms
             this.Lbl_Bairro.Size = new System.Drawing.Size(35, 13);
             this.Lbl_Bairro.TabIndex = 18;
             this.Lbl_Bairro.Text = "label2";
-            // 
-            // Txt_Estado
-            // 
-            this.Txt_Estado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Txt_Estado.Location = new System.Drawing.Point(341, 80);
-            this.Txt_Estado.Name = "Txt_Estado";
-            this.Txt_Estado.Size = new System.Drawing.Size(226, 20);
-            this.Txt_Estado.TabIndex = 11;
             // 
             // Lbl_Estado
             // 
@@ -389,6 +380,7 @@ namespace CursoWindowsForms
             // 
             // Grp_Endereco
             // 
+            this.Grp_Endereco.Controls.Add(this.Cmb_Estado);
             this.Grp_Endereco.Controls.Add(this.Lbl_Cidade);
             this.Grp_Endereco.Controls.Add(this.Txt_Cidade);
             this.Grp_Endereco.Controls.Add(this.Lbl_CEP);
@@ -400,7 +392,6 @@ namespace CursoWindowsForms
             this.Grp_Endereco.Controls.Add(this.Lbl_Bairro);
             this.Grp_Endereco.Controls.Add(this.Txt_Bairro);
             this.Grp_Endereco.Controls.Add(this.Lbl_Estado);
-            this.Grp_Endereco.Controls.Add(this.Txt_Estado);
             this.Grp_Endereco.Location = new System.Drawing.Point(15, 308);
             this.Grp_Endereco.Name = "Grp_Endereco";
             this.Grp_Endereco.Size = new System.Drawing.Size(789, 158);
@@ -501,6 +492,14 @@ namespace CursoWindowsForms
             this.limparToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.limparToolStripButton.Text = "toolStripButton1";
             // 
+            // Cmb_Estado
+            // 
+            this.Cmb_Estado.FormattingEnabled = true;
+            this.Cmb_Estado.Location = new System.Drawing.Point(341, 79);
+            this.Cmb_Estado.Name = "Cmb_Estado";
+            this.Cmb_Estado.Size = new System.Drawing.Size(208, 21);
+            this.Cmb_Estado.TabIndex = 23;
+            // 
             // Frm_CadastroCliente_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -549,7 +548,6 @@ namespace CursoWindowsForms
         private System.Windows.Forms.Label Lbl_Complemento;
         private System.Windows.Forms.TextBox Txt_Bairro;
         private System.Windows.Forms.Label Lbl_Bairro;
-        private System.Windows.Forms.TextBox Txt_Estado;
         private System.Windows.Forms.Label Lbl_Estado;
         private System.Windows.Forms.TextBox Txt_Telefone;
         private System.Windows.Forms.Label Lbl_Telefone;
@@ -576,5 +574,6 @@ namespace CursoWindowsForms
         private System.Windows.Forms.ToolStripButton limparToolStripButton;
         private System.Windows.Forms.Label Lbl_Cidade;
         private System.Windows.Forms.TextBox Txt_Cidade;
+        private System.Windows.Forms.ComboBox Cmb_Estado;
     }
 }
